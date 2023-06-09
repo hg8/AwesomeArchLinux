@@ -154,7 +154,7 @@ echo "[Service]" >> /etc/systemd/system/systemd-logind.service.d/hidepid.conf &&
 echo "SupplementaryGroups=proc" >> /etc/systemd/system/systemd-logind.service.d/hidepid.conf &&\
 
 # hugo
-systemctl deamon-reload
+systemctl daemon-reload
 
 # Preparing the chroot script to be executed
 echo -e "${BBlue}Preparing the chroot script to be executed...${NC}"
